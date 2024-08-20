@@ -3,96 +3,96 @@ import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 export const products = [
     {
-      title: "Moonbeam",
+      title: "Rate Your Proff",
       link: "https://gomoonbeam.com",
       thumbnail:"/images/img1.jpeg"
 
     },
     {
-      title: "Cursor",
+      title: "Rate Your Proff",
       link: "https://cursor.so",
       thumbnail:
         "/images/img2.jpeg",
     },
     {
-      title: "Rogue",
+      title: "Rate Your Proff",
       link: "https://userogue.com",
       thumbnail:
-        "/images/img5.jpeg",
+        "/images/img9.jpeg",
     },
    
     {
-      title: "Editorially",
+      title: "Rate Your Proff",
       link: "https://editorially.org",
       thumbnail:
         "/images/img6.jpeg",
     },
     {
-      title: "Editrix AI",
+      title: "Rate Your Proff",
       link: "https://editrix.ai",
       thumbnail:
         "/images/img5.jpeg",
     },
     {
-      title: "Pixel Perfect",
+      title: "Know Your Proff",
       link: "https://app.pixelperfect.quest",
       thumbnail:
-        "/images/img3.jpeg",
+        "/images/img8.jpeg",
     },
    
     {
-      title: "Algochurn",
+      title: "Know Your Proff",
       link: "https://algochurn.com",
       thumbnail:
         "/images/img4.jpeg",
     },
     {
-      title: "Aceternity UI",
+      title: "Know Your Proff",
       link: "https://ui.aceternity.com",
       thumbnail:
         "/images/img7.jpeg",
     },
     {
-      title: "Tailwind Master Kit",
+      title: "Know Your Proff",
       link: "https://tailwindmasterkit.com",
       thumbnail:
-        "/images/img8.jpeg",
+        "/images/img3.jpeg",
     },
-    // {
-    //   title: "SmartBridge",
-    //   link: "https://smartbridgetech.com",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-    // },
-    // {
-    //   title: "Renderwork Studio",
-    //   link: "https://renderwork.studio",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-    // },
+    {
+      title: "Know Your Proff",
+      link: "https://smartbridgetech.com",
+      thumbnail:
+        "/images/img10.jpeg",
+    },
+    {
+      title: "Chat w/ur Proff",
+      link: "https://renderwork.studio",
+      thumbnail:
+        "/images/img11.jpeg",
+    },
    
-    // {
-    //   title: "Creme Digital",
-    //   link: "https://cremedigital.com",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-    // },
-    // {
-    //   title: "Golden Bells Academy",
-    //   link: "https://goldenbellsacademy.com",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-    // },
-    // {
-    //   title: "Invoker Labs",
-    //   link: "https://invoker.lol",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-    // },
-    // {
-    //   title: "E Free Invoice",
-    //   link: "https://efreeinvoice.com",
-    //   thumbnail:
-    //     "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-    // },
+    {
+      title: "Chat w/ur Proff",
+      link: "https://cremedigital.com",
+      thumbnail:
+        "/images/img12.jpeg",
+    },
+    {
+      title: "Chat w/ur Proff",
+      link: "https://goldenbellsacademy.com",
+      thumbnail:
+        "/images/img13.jpeg",
+    },
+    {
+      title: "Chat w/ur Proff",
+      link: "https://invoker.lol",
+      thumbnail:
+        "/images/img11.jpeg",
+    },
+    {
+      title: "Chat w/ur Proff",
+      link: "https://efreeinvoice.com",
+      thumbnail:
+        "/images/img10.jpeg",
+    },
   ];
