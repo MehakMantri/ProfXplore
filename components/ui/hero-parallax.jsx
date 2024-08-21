@@ -8,9 +8,9 @@ export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const ref = React.useRef(null);
+  const productsRef = React.useRef(null);
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: productsRef,
     offset: ["start start", "end start"],
   });
 
@@ -25,8 +25,9 @@ export const HeroParallax = ({ products }) => {
 
   return (
     <div
-      ref={ref}
-      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-[#1A202C]"
+    id="products-section"
+      ref={productsRef}
+      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-[#0D1419]"
     >
       <Header />
       <motion.div
@@ -59,6 +60,12 @@ export const HeroParallax = ({ products }) => {
 };
 
 export const Header = () => {
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById("products-section");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0"
