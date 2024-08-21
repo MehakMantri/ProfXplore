@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import SignUp from "../SignUp/SignUp";
 
@@ -9,6 +10,7 @@ export const FloatingNav = ({ navItems, className, name }) => {
   const { scrollY } = useScroll();
   const [visible, setVisible] = useState(true);
   const [showSignupForm, setShowSignupForm] = useState(false);
+  const router = useRouter();
 
   useMotionValueEvent(scrollY, "change", (current) => {
     if (typeof current === "number") {
@@ -27,10 +29,15 @@ export const FloatingNav = ({ navItems, className, name }) => {
   const handleSignupClick = () => {
     setShowSignupForm(true);
   };
+  
   const handleCloseModal = () => {
     setShowSignupForm(false);
   };
 
+  const handleSignupSuccess = () => {
+    setShowSignupForm(false);
+    router.push("/proff");
+  };
 
   return (
     <>
@@ -73,7 +80,11 @@ export const FloatingNav = ({ navItems, className, name }) => {
 
       <AnimatePresence>
         {showSignupForm && (
-          <SignUp isOpen={showSignupForm} onClose={handleCloseModal} />
+          <SignUp 
+            isOpen={showSignupForm} 
+            onClose={handleCloseModal}
+            onSuccess={handleSignupSuccess}
+          />
         )}
       </AnimatePresence>
     </>
