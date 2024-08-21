@@ -36,7 +36,7 @@ export const FloatingNav = ({ navItems, className, name }) => {
 
   const handleSignupSuccess = () => {
     setShowSignupForm(false);
-    router.push("/proff");
+    router.push("/proff/page");
   };
 
   return (

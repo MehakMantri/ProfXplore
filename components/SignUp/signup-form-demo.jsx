@@ -18,7 +18,7 @@ export default function SignupFormDemo({ onSuccess }) {
     console.log("Form submitted");
     if (onSuccess) {
       onSuccess();
-      router.push('/proff');
+      router.push('/proff/page');
     }
   };
 

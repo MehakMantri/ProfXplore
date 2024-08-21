@@ -10,7 +10,7 @@ const SignUp = ({ isOpen, onClose, onSuccess }) => {
 
   const handleSignupSuccess = () => {
     onClose();
-    router.push("/proff");
+    router.push("/proff/page");
   };
 
   return (
