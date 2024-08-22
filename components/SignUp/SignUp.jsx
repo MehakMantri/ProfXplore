@@ -8,10 +8,10 @@ const SignUp = ({ isOpen, onClose, onSuccess }) => {
 
   if (!isOpen) return null;
 
-  const handleSignupSuccess = () => {
-    onClose();
-    router.push("/proff/page");
-  };
+  // const handleSignupSuccess = () => {
+  //   onClose();
+  //   router.push("/proff/page");
+  // };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-[6000] bg-black bg-opacity-60">

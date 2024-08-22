@@ -12,14 +12,14 @@ export default function SignupFormDemo({ onSuccess }) {
     password: "",
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("Form submitted");
-    if (onSuccess) {
-      onSuccess();
-      router.push('/proff/page');
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted");
+  //   if (onSuccess) {
+  //     onSuccess();
+  //     router.push('/proff/page');
+  //   }
+  // };
 
   return (
     
