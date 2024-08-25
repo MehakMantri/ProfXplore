@@ -5,7 +5,7 @@ import axios from "axios"; // Import axios for making HTTP requests
 import ProfessorPreview from "@/components/ProfessorPreview";
 const Proff = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [professors, setProfessors] = useState([
+  const [professors, setProfessors] = useState([    
     { "id": 1, "name": "Dr. Karen Lee", "department": "Mathematics", "rating": 4.9, "office": "Room 111", "officeHours": "Mon, Thu 10 AM-12 PM", "reviews": [] },
     { "id": 2, "name": "Dr. Samuel Hall", "department": "Art History", "rating": 4.8, "office": "Room 119", "officeHours": "Mon, Tue 11 AM-1 PM", "reviews": [] },
     { "id": 3, "name": "Dr. Tina Allen", "department": "Art History", "rating": 4.6, "office": "Room 120", "officeHours": "Wed, Fri 2-4 PM", "reviews": [] },
