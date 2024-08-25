@@ -15,6 +15,7 @@ return (
       <html lang="en">
         <body className={inter.className}>
           <main>{children}</main>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
